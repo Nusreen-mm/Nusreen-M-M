@@ -1,152 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nusreen M M | Data Analyst Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background-color: #f8f9fb;
-      color: #333;
-      line-height: 1.6;
-      display: flex;
-      justify-content: center;
-      padding: 40px;
-    }
-
-    .container {
-      max-width: 900px;
-      width: 100%;
-      background: #fff;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 25px;
-    }
-
-    .header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .header-text h1 {
-      font-size: 28px;
-      color: #111;
-    }
-
-    .header-text h3 {
-      color: #666;
-      font-weight: 400;
-      margin-top: 5px;
-    }
-
-    section {
-      margin-top: 40px;
-    }
-
-    h2 {
-      color: #222;
-      margin-bottom: 15px;
-      font-size: 20px;
-      border-left: 4px solid #0078d7;
-      padding-left: 10px;
-    }
-
-    ul {
-      margin-left: 20px;
-    }
-
-    .project {
-      margin-bottom: 15px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nusreen M M — Portfolio</title>
+  <meta name="description" content="Nusreen M M — Data Analyst. Power BI, Excel, SQL, Tableau. Portfolio." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="assets/profile.jpg" alt="Nusreen M M Photo" />
-      <div class="header-text">
-        <h1>Nusreen M M</h1>
-        <h3>Data Analyst</h3>
-        <p>Results-driven Data Analyst skilled in Power BI, Excel, SQL, and Tableau — turning data into strategic insights that drive impact and decision-making.</p>
+  <main class="site">
+
+    <!-- NAV / TOP BAR -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="#hero" class="logo">Uzyy<span class="dot">.</span></a>
+          <p class="role">Data Analyst • Power BI • Excel • SQL</p>
+        </div>
+        <nav class="nav">
+          <a href="#projects">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact" class="cta">Contact</a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><b>Master of Commerce (Finance)</b> – Govt. Arts and Science College, Calicut (2022–2024)</li>
-        <li><b>Bachelor of Commerce (Finance)</b> – Farook College Autonomous, Calicut (2019–2022)</li>
-      </ul>
-    </section>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="intro-badge">Data Storyteller</div>
+          <h1 class="hero-title">Hi, I'm <span class="accent">Nusreen (Uzyy)</span></h1>
+          <p class="hero-sub">I turn complex business data into clear, actionable dashboards and automation that drive decisions.</p>
 
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li><b>Data Analyst</b> – Rows and Columns, Calicut (Jul 2025 – Present)
-          <ul>
-            <li>Developed Power BI dashboards enabling faster decision-making.</li>
-            <li>Automated workflows via Power Automate reducing manual work by 35%.</li>
+          <div class="hero-actions">
+            <a href="#projects" class="btn filled">View Work</a>
+            <a href="assets/Nusreen_Resume.pdf" class="btn outline" target="_blank" rel="noopener">Resume</a>
+          </div>
+
+          <ul class="social-list">
+            <li><a href="https://linkedin.com/in/nusreenmm" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/Nusreen-mm" target="_blank" rel="noopener">GitHub</a></li>
           </ul>
-        </li>
-      </ul>
-    </section>
+        </div>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <b>Fuel Pricing Management System</b> – Automated Excel-based data entry with VBA.
+        <aside class="hero-right">
+          <div class="profile-card">
+            <img 
+              src="assets/profile.jpg" 
+              alt="Nusreen M M" 
+              class="profile-img"
+              onerror="this.src='assets/default-profile.png'; this.style.objectFit='contain';"
+            />
+            <h3>Nusreen M M</h3>
+            <p class="mini-role">Data Analyst • Dashboarding • Automation</p>
+            <div class="mini-stats">
+              <div><strong>5+</strong><span>Projects</span></div>
+              <div><strong>2+</strong><span>Years</span></div>
+            </div>
+          </div>
+        </aside>
       </div>
-      <div class="project">
-        <b>Logistics Operations Dashboard</b> – Built Power BI dashboards for financial and sales analysis.
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">My Story</h2>
+        <p class="lead">I studied finance, but my curiosity about patterns in numbers led me into data analytics. I build dashboards and automations that help teams save time and make confident decisions — combining aesthetics with performance.</p>
       </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Power BI, Tableau, SQL, Excel, Power Automate, SharePoint</li>
-        <li>Data Modeling, Financial Analysis, Dashboard Design</li>
-        <li>Communication, Collaboration, Analytical Thinking</li>
-      </ul>
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="assets/project1.jpg" alt="Project 1" />
+            <div class="project-meta">
+              <h3>Logistics Operations Dashboard</h3>
+              <p class="muted">Power BI • ETL • Automation</p>
+              <p class="desc">Interactive dashboard for sales & financial KPIs with automated refreshes and P&L visuals.</p>
+              <div class="tags"><span>Power BI</span><span>Automation</span></div>
+            </div>
+            <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project2.jpg" alt="Project 2" />
+            <div class="project-meta">
+              <h3>Fuel Pricing Management System</h3>
+              <p class="muted">Excel • VBA • UX</p>
+              <p class="desc">A VBA-powered form + macros to automate pricing, currency conversion, and reporting.</p>
+              <div class="tags"><span>Excel</span><span>VBA</span></div>
+            </div>
+            <a class="project-link" href="#" target="_blank" rel="noopener">Preview</a>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project3.jpg" alt="Project 3" />
+            <div class="project-meta">
+              <h3>Country-wise Sales Analysis</h3>
+              <p class="muted">Power BI • DAX • Storytelling</p>
+              <p class="desc">Comparative analysis of markets with drill-through and interactive segmentation.</p>
+              <div class="tags"><span>Power BI</span><span>DAX</span></div>
+            </div>
+            <a class="project-link" href="#" target="_blank" rel="noopener">Open</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:nusreenmm@example.com">nusreenmm@example.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/nusreenmm" target="_blank">linkedin.com/in/nusreenmm</a></li>
-        <li>GitHub: <a href="https://github.com/nusreenmm" target="_blank">github.com/nusreenmm</a></li>
-      </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="skills-grid">
+          <span class="skill">Power BI</span>
+          <span class="skill">Excel (VBA)</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Tableau</span>
+          <span class="skill">Power Automate</span>
+          <span class="skill">SharePoint</span>
+          <span class="skill">Data Modeling</span>
+          <span class="skill">Dashboard Design</span>
+        </div>
+      </div>
     </section>
 
-    <div class="footer">
-      © 2025 Nusreen M M | Data Analyst Portfolio
-    </div>
-  </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="exp-grid">
+          <div class="exp-item">
+            <h3>Data Analyst — Rows & Columns</h3>
+            <p class="muted">Jul 2025 – Present</p>
+            <ul>
+              <li>Built Power BI dashboards that improved KPI tracking speed by 30%.</li>
+              <li>Optimized DAX & models for faster reports and better accuracy.</li>
+              <li>Automated reporting flows with Power Automate, saving manual time.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <h3>Founder — Pastry_Hub</h3>
+            <p class="muted">2020 – Present</p>
+            <ul>
+              <li>Handled business analytics for sales, stock, and pricing using Excel dashboards.</li>
+              <li>Improved order management with a custom Excel tool.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Let’s Connect</h2>
+          <p class="lead">I’m open to freelance projects and full-time roles. Tell me about your challenge — I’ll bring the data and the clarity.</p>
+
+          <div class="contact-cards">
+            <div class="card">
+              <strong>Email</strong>
+              <a href="mailto:nusreenmm@gmail.com">nusreenmm@gmail.com</a>
+            </div>
+            <div class="card">
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com/in/nusreenmm" target="_blank" rel="noopener">linkedin.com/in/nusreenmm</a>
+            </div>
+            <div class="card">
+              <strong>GitHub</strong>
+              <a href="https://github.com/Nusreen-mm" target="_blank" rel="noopener">github.com/Nusreen-mm</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" onsubmit="alert('Thanks — this form is a demo. Add a backend or mailto link to submit.'); return false;">
+          <label>Name <input type="text" required /></label>
+          <label>Email <input type="email" required /></label>
+          <label>Message <textarea rows="4" required></textarea></label>
+          <button class="btn filled" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Nusreen M M • Crafted with care</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
