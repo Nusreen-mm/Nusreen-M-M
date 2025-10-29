@@ -31,8 +31,8 @@
       <div class="container hero-grid">
         <div class="hero-left">
           <div class="intro-badge">Data Storyteller</div>
-          <h1 class="hero-title">Hi, I'm <span class="accent">Nusreen M M</span></h1>
-          <p class="hero-sub">I turn complex business data into clear, actionable dashboards and automations that drive decisions.</p>
+          <h1 class="hero-title">Hi, I'm <span class="accent">Nusreen (Uzyy)</span></h1>
+          <p class="hero-sub">I turn complex business data into clear, actionable dashboards and automation that drive decisions.</p>
 
           <div class="hero-actions">
             <a href="#projects" class="btn filled">View Work</a>
@@ -40,14 +40,15 @@
           </div>
 
           <ul class="social-list">
-            <li><a href="https://linkedin.com/in/nusreenmm" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/Nusreen-mm" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
           </ul>
         </div>
 
         <aside class="hero-right">
+          <!-- smaller profile circle than your reference -->
           <div class="profile-card">
-            <img src="profile.jpeg" alt="Nusreen M M" class="profile-img" />
+            <img src="assets/profile.jpg" alt="Nusreen M M" class="profile-img" />
             <h3>Nusreen M M</h3>
             <p class="mini-role">Data Analyst • Dashboarding • Automation</p>
             <div class="mini-stats">
@@ -59,7 +60,7 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT / STORY -->
     <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">My Story</h2>
@@ -67,7 +68,7 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (grid with hover reveal) -->
     <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Featured Projects</h2>
@@ -126,7 +127,7 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- EXPERIENCE (timeline-like, compact) -->
     <section id="experience" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Experience</h2>
@@ -177,6 +178,7 @@
           </div>
         </div>
 
+        <!-- optional small contact form (non-functional without backend) -->
         <form class="contact-form" action="#" onsubmit="alert('Thanks — this form is a demo. Add a backend or mailto link to submit.'); return false;">
           <label>Name <input type="text" required /></label>
           <label>Email <input type="email" required /></label>
@@ -195,6 +197,7 @@
   </main>
 
   <script>
+    // set current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
