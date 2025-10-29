@@ -7,7 +7,7 @@
   <style>
     :root {
       --bg: #f7faff;
-      --primary: #4a63e7;
+      --primary: #536dfe;
       --text-dark: #1e293b;
       --text-light: #64748b;
       --card: #fff;
@@ -30,47 +30,57 @@
 
     .container {
       max-width: 1000px;
-      margin: 40px auto;
+      margin: 50px auto;
       background: var(--card);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       overflow: hidden;
       padding: 40px;
-    }
-
-    .header {
       display: flex;
-      align-items: center;
-      gap: 25px;
+      gap: 40px;
+      align-items: flex-start;
     }
 
-    .header img {
-      width: 120px;
-      height: 120px;
+    .left {
+      flex: 1;
+      text-align: center;
+    }
+
+    .left img {
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid var(--primary);
+      border: 4px solid var(--primary);
+      margin-bottom: 20px;
     }
 
-    .header h1 {
-      font-size: 28px;
+    .left h1 {
+      font-size: 26px;
       color: var(--primary);
+      margin-bottom: 8px;
     }
 
-    .header h3 {
-      font-weight: 500;
+    .left h3 {
       color: var(--text-light);
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .right {
+      flex: 2;
     }
 
     section {
-      margin-top: 40px;
+      margin-bottom: 30px;
     }
 
     h2 {
-      font-size: 22px;
+      font-size: 20px;
       border-left: 5px solid var(--primary);
       padding-left: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       color: var(--text-dark);
     }
 
@@ -103,78 +113,80 @@
     }
 
     @media (max-width: 768px) {
-      .header {
+      .container {
         flex-direction: column;
         text-align: center;
       }
-      .header img {
-        width: 100px;
-        height: 100px;
+
+      .right {
+        text-align: left;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <img src="profile.jpeg" alt="Profile Photo">
-      <div>
-        <h1>Nusreen M M</h1>
-        <h3>Data Analyst | Power BI | Excel | Tableau</h3>
-        <p>📍 Calicut, India | ✉️ <a href="mailto:nusreenmm@example.com">nusreenmm@example.com</a></p>
-      </div>
+    <div class="left">
+      <img src="profile.jpeg" alt="Profile Photo" />
+      <h1>Nusreen M M</h1>
+      <h3>Data Analyst</h3>
+      <p>📍 Calicut, India</p>
+      <p>✉️ <a href="mailto:nusreenmm@example.com">nusreenmm@example.com</a></p>
     </div>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a data-driven analyst passionate about transforming raw data into meaningful insights. 
-        With expertise in Power BI, Excel, Tableau, and SQL, I specialize in building 
-        interactive dashboards, automating workflows, and supporting strategic decision-making.
-      </p>
-    </section>
+    <div class="right">
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Results-driven Data Analyst passionate about transforming data into actionable insights. 
+          Skilled in Power BI, Excel, Tableau, and SQL with a strong foundation in financial analytics, automation, and visualization. 
+          I enjoy designing clean dashboards that tell compelling data stories.
+        </p>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><b>Master of Commerce (Finance)</b> — Govt. Arts & Science College, Calicut (2022–2024)</li>
-        <li><b>Bachelor of Commerce (Finance)</b> — Farook College Autonomous, Calicut (2019–2022)</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><b>Master of Commerce (Finance)</b> — Govt. Arts & Science College, Calicut (2022–2024)</li>
+          <li><b>Bachelor of Commerce (Finance)</b> — Farook College Autonomous, Calicut (2019–2022)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li><b>Data Analyst – Rows and Columns, Calicut (Jul 2025 – Present)</b><br>
-        Designed Power BI dashboards, automated reports with Power Automate, and collaborated with clients to improve efficiency by 30%.</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Experience</h2>
+        <ul>
+          <li><b>Data Analyst – Rows and Columns, Calicut (Jul 2025 – Present)</b><br>
+            Developed Power BI dashboards, automated reports using Power Automate, and optimized data models, improving reporting efficiency by 30%.
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="project-card">
-        <b>Fuel Pricing Management System (VBA & Excel)</b>
-        <p>Automated data entry, editing, and reporting using macros and dynamic forms—reducing manual workload by 40%.</p>
-      </div>
-      <div class="project-card">
-        <b>Logistics Operations Dashboard (Power BI)</b>
-        <p>Built KPI dashboards tracking performance across sales, finance, and operations with real-time data updates.</p>
-      </div>
-    </section>
+      <section>
+        <h2>Projects</h2>
+        <div class="project-card">
+          <b>Fuel Pricing Management System (VBA & Excel)</b>
+          <p>Automated data entry, calculations, and reporting using VBA macros — improved accuracy and saved 40% manual time.</p>
+        </div>
+        <div class="project-card">
+          <b>Logistics Operations Dashboard (Power BI)</b>
+          <p>Built KPI dashboards to track performance across departments and automated daily data refreshes using Power Automate.</p>
+        </div>
+      </section>
 
-    <section>
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Power BI</span>
-        <span>Excel</span>
-        <span>SQL</span>
-        <span>Tableau</span>
-        <span>Data Modeling</span>
-        <span>ETL</span>
-        <span>Power Automate</span>
-        <span>Financial Analysis</span>
-      </div>
-    </section>
+      <section>
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>Power BI</span>
+          <span>Excel</span>
+          <span>SQL</span>
+          <span>Tableau</span>
+          <span>Data Modeling</span>
+          <span>ETL</span>
+          <span>Power Automate</span>
+          <span>Financial Analysis</span>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
 </html>
