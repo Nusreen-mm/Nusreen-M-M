@@ -38,8 +38,30 @@ a{color:inherit;text-decoration:none}
 .social-list a{color:var(--muted);font-weight:600}
 
 /* profile card (smaller than your senior reference) */
-.profile-card{background:var(--card);border-radius:18px;padding:18px;box-shadow:var(--shadow);text-align:center;max-width:300px;margin-left:auto}
-.profile-img{width:110px;height:110px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.profile-card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 26px;                /* slightly more padding */
+  box-shadow: var(--shadow);
+  text-align: center;
+  max-width: 340px;             /* increased width */
+  margin-left: auto;
+  transform: scale(1.1);        /* makes the whole card a bit larger */
+  transition: transform 0.3s ease;
+}
+
+.profile-img {
+  width: 160px;                 /* bigger photo */
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 6px 22px rgba(16, 24, 40, 0.12);
+}
+.profile-card:hover {
+  transform: scale(1.15);
+}
+
 .profile-card h3{margin:12px 0 2px;font-size:1.05rem}
 .mini-role{color:var(--muted);margin:0 0 12px}
 .mini-stats{display:flex;gap:12px;justify-content:center}
